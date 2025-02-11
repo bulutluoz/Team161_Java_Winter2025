@@ -1,4 +1,4 @@
-package day02_variableKullanimi_scanner;
+package day02_variableKullanimi_dataTurleri;
 
 public class C01_VariableOlusturmaVeKullanma {
 

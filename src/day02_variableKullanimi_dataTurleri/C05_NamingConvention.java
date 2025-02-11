@@ -1,4 +1,4 @@
-package day02_variableKullanimi_scanner;
+package day02_variableKullanimi_dataTurleri;
 
 public class C05_NamingConvention {
 
@@ -52,5 +52,11 @@ public class C05_NamingConvention {
         System.out.println(okul1ismi.toUpperCase());
 
 
+        // 7- isim olarak anahtar kelimeler kullanilamaz
+        // int int = 8 ;
+
+        // String class = "ali";
+
+        // boolean for = true;
     }
 }
