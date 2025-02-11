@@ -33,6 +33,18 @@ public class C02_VariableOlusturmaVeKullanma {
         sayi = sayi + 5 ;
 
 
+        System.out.println("36.satirda sayi'nin degeri : " +  sayi );
+        // 36.satirda sayi'nin degeri : 35
+
+
+
+        int a = 10;
+
+        a = 2 * a + 1 ;
+
+        System.out.println("a'nin degeri : " + a );  // 21
+
+
 
     }
 }
