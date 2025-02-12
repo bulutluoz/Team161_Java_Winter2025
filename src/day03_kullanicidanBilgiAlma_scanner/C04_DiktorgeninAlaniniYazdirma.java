@@ -18,9 +18,5 @@ public class C04_DiktorgeninAlaniniYazdirma {
         System.out.println("Dikdörtgenin Alan Ölçüsü = " + (kisakenar*uzunkenar));
 
 
-
-
-
-
     }
 }
