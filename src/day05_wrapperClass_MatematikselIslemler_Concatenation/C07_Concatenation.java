@@ -50,6 +50,7 @@ public class C07_Concatenation {
 
         /*
             Casting islemi ile hicbir data turunu String'e cast edemezsiniz
+            ama "" ile toplayarak herseyi String'lestirebiliriz
          */
 
         boolean bl = true;
