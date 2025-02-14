@@ -19,6 +19,24 @@ public class C04_RakamlarToplaminiBulma {
 
 
 
+        rakam = sayi % 10;
+        rakamlarToplami = rakamlarToplami + rakam ;
+
+        sayi = sayi / 10;  // sayi artik 2 basamakli oldu
+
+
+
+        rakam = sayi % 10;
+
+        rakamlarToplami = rakamlarToplami + rakam;
+
+        sayi = sayi / 10;  // artik sayi tek basamakli
+
+
+        rakamlarToplami = rakamlarToplami + sayi ;
+
+        System.out.println("girilen sayinin rakamlar toplami : " + rakamlarToplami);
+
 
 
 
