@@ -10,6 +10,12 @@ public class C05_charDataTurundeCasting {
 
             char data turu MATEMATIKSEL ISLEMDE kullanilirsa
             ASCII table'daki sayisal degeri ile isleme girer
+
+            char data turu bu ozelligi ile
+            int data turu ile ilisiklendirilebilir
+
+            metni olusturan karakterleri tutmasi yonuyle de
+            Strin ile ilisiklendirilebilir
          */
 
         boolean bl = true;
