@@ -117,8 +117,7 @@ public class C02_preIncrement_postIncrement {
 
 
         System.out.println("109.satirda b : " + b + ", c : " + c);
-
-
+        // 109.satirda b : 39, c : 81
 
 
 
