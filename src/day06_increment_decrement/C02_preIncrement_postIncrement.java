@@ -45,6 +45,80 @@ public class C02_preIncrement_postIncrement {
         int c = a++;
 
         System.out.println("47.satirda a : " + a + ", c : " + c);
+        // 47.satirda a : 21, c : 20
+
+
+        a = 20;
+
+
+        c = ++a;
+
+
+        System.out.println("57.satirda a : " + a + ", c : " + c);
+        // 57.satirda a : 21, c : 21
+
+
+        b = 40;
+
+        c = b--;
+
+
+        System.out.println("66.satirda b : " + b + ", c : " + c);
+        // 66.satirda b : 39, c : 40
+
+
+        b = 40;
+
+        c = --b;
+
+
+        System.out.println("75.satirda b : " + b + ", c : " + c);
+        // 75.satirda b : 39, c : 39
+
+
+
+
+        // 3.ihtimal ayni satirda matematiksel islem olursa
+
+        a= 20;
+
+
+        c = 2 * a++ -3 ;
+
+        System.out.println("88.satirda a : " + a + ", c : " + c);
+        // 88.satirda a : 21, c : 37
+
+
+        a = 20;
+
+
+        c = ++a + 20;
+
+
+
+        System.out.println("99.satirda a : " + a + ", c : " + c);
+        // 99.satirda a : 21, c : 41
+
+
+        b = 40;
+
+
+        c = 3 * (b-- - 2);
+
+
+        System.out.println("109.satirda b : " + b + ", c : " + c);
+        // 109.satirda b : 39, c : 114
+
+
+        b = 40;
+
+
+        c = 2 * --b + 3 ;
+
+
+        System.out.println("109.satirda b : " + b + ", c : " + c);
+
+
 
 
 
