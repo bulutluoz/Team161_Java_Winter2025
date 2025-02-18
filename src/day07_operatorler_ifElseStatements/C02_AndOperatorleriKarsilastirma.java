@@ -3,6 +3,17 @@ package day07_operatorler_ifElseStatements;
 public class C02_AndOperatorleriKarsilastirma {
 
     public static void main(String[] args) {
+
+        /*
+            & veya && kullanimini asagidaki nota gore tercih edebiliriz
+
+            Eger sonuc odakli isek
+            ve bir an once sonuca ulasmak istiyorsak  &&
+
+            Eger islem odakli isek
+            ve tum karsilastirmalari MUTLAKA kontrol etmek istiyorsak &
+         */
+
         int a = 10;
         int b = 20;
 
