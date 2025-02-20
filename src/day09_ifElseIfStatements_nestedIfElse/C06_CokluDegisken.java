@@ -26,6 +26,16 @@ public class C06_CokluDegisken {
 
         double indirimsizToplamFiyat = adet * birimFiyat;
 
+        if (kartVarMi == 'E' && adet > 10)
+            System.out.println("%20 indirimli toplam fiyat : " + indirimsizToplamFiyat * 80/100);
+        else if (kartVarMi == 'E' ) // Condition 'adet <=10' is always 'true' when reached
+            System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85/100);
+        else if (kartVarMi == 'H' && adet >10)
+            System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85/100);
+        else if (kartVarMi == 'H' ) // && adet<=10
+            System.out.println("%10 indirimli toplam fiyat : " + indirimsizToplamFiyat * 90/100);
+        else
+            System.out.println("Girilen degerler icin fiyat hesaplanamiyor");
 
 
 
