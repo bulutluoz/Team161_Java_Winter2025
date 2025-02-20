@@ -24,7 +24,14 @@ public class C05_CokluDegisken {
 
         if ( yas<15 || yas > 80  ||  !(cinsiyet == 'E' || cinsiyet =='K')   ){
             System.out.println("Girdiginiz degerler uygun degil");
-        }
+        } else if (cinsiyet == 'K' && yas>=60)
+            System.out.println("Kadin ve yas 60'dan fazla, emekli olabilir");
+        else if (cinsiyet == 'K'  &&  yas<60)
+            System.out.println("Kadinlar 60 yasinda emekli olur, daha " + (60-yas) + " yıl calısman lazım");
+        else if (cinsiyet == 'E' && yas>=65)
+            System.out.println("Erkek ve yas 65'den fazla, emekli olabilir");
+        else if (cinsiyet == 'E' && yas<65)
+            System.out.println("Erkekler 65 yasinda emekli olabilir, daha " + (65-yas) + " yıl calısman lazım");
 
 
 
