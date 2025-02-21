@@ -1,8 +1,8 @@
-package day09_ifElseIfStatements_nestedIfElse;
+package day10_nestedIfElse_ternary;
 
 import java.util.Scanner;
 
-public class C08_NestedIfElse_Indirim {
+public class C01_NestedIfElse_IndirimHesabi {
 
     public static void main(String[] args) {
 
@@ -26,35 +26,33 @@ public class C08_NestedIfElse_Indirim {
 
         double indirimsizToplamFiyat = adet * birimFiyat;
 
-        // ana degisken kart var mi olsun
+        // ana degisken urun adedi olsun
 
-        if (kartVarMi == 'E'){
-            // musteri karti olanlar bolgesi
-            if (adet > 10)
+        if (adet >10){
+            // 10 urunden fazla alanlar bolgesi
+            if (kartVarMi == 'E')
                 System.out.println("%20 indirimli toplam fiyat : " + indirimsizToplamFiyat * 80/100);
-            else if (adet>0)
+            else if (kartVarMi == 'H')
                 System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85/100);
-            else // adet olarak 0 veya negatif deger girenler
-                System.out.println("urun adedi olarak pozitif bir deger girmelisiniz...");
+            else
+                System.out.println("kart var mi sorusuna verilen yanit gecersiz");
 
-        } else if ( kartVarMi == 'H') {
-            // musteri karti olmayanlar bolgesi
-            if (adet > 10)
+
+        } else if (adet>0) {
+            // 0'dan fazla 10 adete kadar urun alanlar bolgesi
+            if (kartVarMi == 'E')
                 System.out.println("%15 indirimli toplam fiyat : " + indirimsizToplamFiyat * 85/100);
-            else if (adet>0)
+            else if (kartVarMi == 'H')
                 System.out.println("%10 indirimli toplam fiyat : " + indirimsizToplamFiyat * 90/100);
-            else // adet olarak 0 veya negatif deger girenler
-                System.out.println("urun adedi olarak pozitif bir deger girmelisiniz...");
-
-        } else
-            System.out.println("kart var mi sorusuna girilen deger HATALI...");
+            else
+                System.out.println("kart var mi sorusuna verilen yanit gecersiz");
 
 
+        } else {
+            // urun adedi olarak 0 veya negatif girenlerin bolgesi
 
 
-
-
-
+        }
 
     }
 }
