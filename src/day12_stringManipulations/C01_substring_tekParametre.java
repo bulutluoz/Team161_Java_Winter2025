@@ -31,8 +31,15 @@ public class C01_substring_tekParametre {
         System.out.println( str.substring(str.length()-1)); // r
 
 
-        System.out.println( str.charAt(str.length())); //
-        System.out.println( str.substring(str.length())); //
+        // System.out.println( str.charAt(str.length())); // StringIndexOutOfBoundsException
+        System.out.println( str.substring(str.length())); // hiclik yazdirir ( bos bir satir)
+
+        System.out.println("Hello world");
+
+
+
+        // System.out.println( str.charAt(str.length() + 1)); // StringIndexOutOfBoundsException
+        System.out.println( str.substring(str.length()+1)); // StringIndexOutOfBoundsException
 
 
 
