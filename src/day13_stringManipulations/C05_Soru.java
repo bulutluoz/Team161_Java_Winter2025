@@ -2,7 +2,7 @@ package day13_stringManipulations;
 
 import java.util.Scanner;
 
-public class C03_Soru {
+public class C05_Soru {
 
     public static void main(String[] args) {
 
@@ -16,38 +16,20 @@ public class C03_Soru {
         System.out.println("Lutfen bir cumle giriniz...");
         String cumle = scanner.nextLine();
 
-
         System.out.println("Cumlede aranacak metni giriniz...");
         String metin = scanner.nextLine();
 
-        int metinIlkIndex= cumle.indexOf(metin);
-        int metinIkinciIndex = cumle.indexOf(metin, metinIlkIndex+1);
+        int ilkIndex = cumle.indexOf(metin);
+        int sonIndex = cumle.lastIndexOf(metin);
 
-        if ( metinIlkIndex == -1  ){
-            System.out.println("Aradiginiz metin cumlede yok");
-        } else if ( metinIkinciIndex == -1   ) { // metinIlkIndex != -1 &&
-            System.out.println("Aradiginiz metin cumlede sadece 1 kere geciyor");
+
+        if ( ilkIndex == -1  ){
+            System.out.println("Aranan metin cumlede kullanilmamis");
+        } else if ( ilkIndex == sonIndex ) {
+            System.out.println("Aranan metin cumlede sadece 1 kere kullanilmis");
         } else {
-            System.out.println("Aradiginiz metin cumlede 1'den fazla kere kullanilmis");
+            System.out.println("Aranan metin cumlede 1'den fazla kere kullanilmis");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
