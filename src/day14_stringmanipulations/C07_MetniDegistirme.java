@@ -2,7 +2,7 @@ package day14_stringmanipulations;
 
 import java.util.Scanner;
 
-public class C07_Metnidegistirme {
+public class C07_MetniDegistirme {
 
     public static void main(String[] args) {
 
@@ -23,13 +23,23 @@ public class C07_Metnidegistirme {
             // ismin uzunlugu cift sayi
             // tam ortasina :) ekleyin
 
+            System.out.println(
+                    metin.substring(0, uzunluk/2)+
+                    ":)" +
+                    metin.substring(uzunluk/2)
+            );
+
 
 
         } else {
             // ismin uzunlugu tek sayi
             // ortadaki harfi silin ve yerine :( yazdirin.
 
-
+            System.out.println(
+                    metin.substring(0, uzunluk/2)+
+                    ":(" +
+                    metin.substring(uzunluk/2 +1)
+            );
 
         }
 
