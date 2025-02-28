@@ -23,15 +23,12 @@ public class C05_RakamlarToplaminiBulma_Odev {
 
         rakam = sayi % 10;
         rakamlarToplami = rakamlarToplami + rakam ;
-
         sayi = sayi / 10;  // sayi artik 2 basamakli oldu
 
 
 
         rakam = sayi % 10;
-
         rakamlarToplami = rakamlarToplami + rakam;
-
         sayi = sayi / 10;  // artik sayi tek basamakli
 
 
