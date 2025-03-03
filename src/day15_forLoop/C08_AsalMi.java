@@ -15,11 +15,18 @@ public class C08_AsalMi {
 
         for (int i = 2; i <= girilenSayi-1 ; i++) {
 
+
             if (girilenSayi % i == 0){
                 System.out.println("Asal degil, " + i + "'ye bolunuyor");
                 // eger for loop bir sart saglandiginda bitsin istiyorsak
                 break;
             }
+
+            if(i == girilenSayi-1){
+                System.out.println("Girilen " + girilenSayi + " sayisi asal.");
+            }
+
+
 
         }
 
