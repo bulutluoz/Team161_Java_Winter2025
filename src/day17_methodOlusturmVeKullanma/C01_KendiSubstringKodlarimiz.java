@@ -52,7 +52,7 @@ public class C01_KendiSubstringKodlarimiz {
         // 51.satir bize "false" sonucunu getirir
         // bu sonuc yazdirilmadigi icin konsolda goremeyiz
         // kaydedilmedigi icin de 51.satirdan sonra bu degeri kullanamayiz
-
+        // kapici ekmegi alip geldi ama biz kapicidan ekmegi almadik
 
         System.out.println(metin.contains("Java"));
         // 57.satirdaki contains() bize "true" sonucunu getirir
@@ -60,7 +60,7 @@ public class C01_KendiSubstringKodlarimiz {
         // biz de konsolda true goruruz
         // ancak sonuc bir variable'a atanmadigindan
         // 57.satirdan sonra bu sonucu kullanamayiz
-
+        // ekmegi kapicidan aldik ve yedik, aksam yemegine ekmek YOK
 
         boolean sonuc = metin.contains(" ");
         // 65.satirdaki contains() bize "true" sonucunu getirir
@@ -68,7 +68,8 @@ public class C01_KendiSubstringKodlarimiz {
         // sout icinde olmadigindan sonucu konsolda goremeyiz
         // istersek sonuc variable'ni yazdirarak konsolda da sonucu gorebiliriz
         // 65.satirdan sonra lazim olursa sonuc variable'inin degerini kullanabilirsiniz
-
+        // kapici ekmegi alip geldi, bizde kapicidan ekmegi alip ekmek kabina koyduk
+        // artik istedigim zaman yiyebilirim veya sonrasinda yemek uzere muhafaza edebilirim
 
     }
 }
