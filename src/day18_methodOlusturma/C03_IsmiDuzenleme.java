@@ -1,10 +1,8 @@
 package day18_methodOlusturma;
 
-import java.util.Scanner;
+public class C03_IsmiDuzenleme {
 
-public class C02_IsmiDegistirme {
-
-    // Kullanicidan isim ve soyismini ayri ayri alip
+    // Verilen isim ve soyismi kontrol edip
     //	- ismi daha uzun ise,
     //    isim ve soyismi ilk harf buyuk kalanlar kucuk seklinde yazdiran
     //  - soyisim daha uzun ise,
@@ -12,24 +10,15 @@ public class C02_IsmiDegistirme {
     //  bir method olusturun
 
     public static void main(String[] args) {
-        // Bu gorevi daha once day14 C06'de yaptik
-        // orada yazdigimiz kodu method olarak olusturmadigimiz icin
-        // icinde oldugumuz bu class'dan o kodlari kullanma imkanimiz yok
-        // simdi ayni islemi method olarak olusturalim ki
-        // bundan sonra ne zaman lazim olsa buradan hazir method kullanilabilsin
 
-        ismiDuzenleYazdir();
-
+        verilenIsmiDuzenleYazdir("yusuf","dikmen");
+        verilenIsmiDuzenleYazdir("Eda","Keceli");
+        verilenIsmiDuzenleYazdir("fulya nermin","keceli");
 
     }
 
 
-    public static void ismiDuzenleYazdir(   ){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("isminizi giriniz...");
-        String isim = scanner.nextLine();
-        System.out.println("soyisminizi giriniz...");
-        String soyisim = scanner.nextLine();
+    public static void verilenIsmiDuzenleYazdir(String isim , String soyisim){
 
         if ( isim.length() > soyisim.length()){
             // isim daha uzunsa
@@ -56,6 +45,6 @@ public class C02_IsmiDegistirme {
             );
 
         }
-
     }
+
 }
