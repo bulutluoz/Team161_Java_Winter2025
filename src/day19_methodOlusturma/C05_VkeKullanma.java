@@ -13,6 +13,19 @@ public class C05_VkeKullanma {
         //         20’den kucukse zayif yazdirin.
 
 
+        double vke = C04_VucutKitleEndexiHesapla.vucutKitleEndeksiHesapla();
+
+        System.out.println("Vucut kitle endeksiniz : " + vke);
+
+        if (vke>30)
+            System.out.println("obez");
+        else if (vke>25) {
+            System.out.println("kilolu");
+        } else if (vke>20) {
+            System.out.println("normal");
+        }
+        else System.out.println("zayıf");
+
 
     }
 }
