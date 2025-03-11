@@ -26,9 +26,13 @@ public class C06_KarekokBulma {
 
             karekok++;
 
+            if (karekok*karekok > sayi){
+                System.out.println(false);
+                break;
+            }
+
         }
 
-        System.out.println(karekok + " loop bitti");
-        // ODEV : false yazmasi icin kod eklenecek
+
     }
 }
