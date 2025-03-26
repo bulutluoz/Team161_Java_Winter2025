@@ -8,8 +8,6 @@ public class C01_Araba {
     int yil = 1900;
     int fiyat;
 
-
-
     C01_Araba(String mrk , String mdl){
         marka = mrk;
         model = mdl;
@@ -31,18 +29,24 @@ public class C01_Araba {
 
         // esitligin sol tarafindaki varioable'lara
         // siz class level'daki variable'larsiniz DEMEMIZ GEREKIYOR
-        ilanNo = ilanNo;
-        marka = marka;
-        model = model;
+        // Java bu islem icin ozel bir keyword olusturmus
+        // this.  .....
+        this.ilanNo = ilanNo;
+        this.marka = marka;
+        this.model = model;
 
     }
 
 
+    // Constructor'lari intelliJ'e de olusturtabiliriz
 
-
-
-
-
+    public C01_Araba(int ilanNo, String marka, String model, int yil, int fiyat) {
+        this.ilanNo = ilanNo;
+        this.marka = marka;
+        this.model = model;
+        this.yil = yil;
+        this.fiyat = fiyat;
+    }
 
 
     // bu class'dan olusturulan objelerin
