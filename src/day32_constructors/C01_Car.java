@@ -36,12 +36,6 @@ public class C01_Car {
     }
 
 
-
-
-
-
-
-
     /*
             Bir class olusturdugumuzda
             baska class'larda bu class'dan obje olusturuldugunda
