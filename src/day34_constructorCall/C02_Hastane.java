@@ -27,7 +27,14 @@ public class C02_Hastane {
         - variable'larin deger kontolu yapilmasi acisindan ise instance daha kullanislidir.
      */
 
+    public static String hastaneIsmi = "Yildiz Hastanesi";
+    public static String hastaneAdresi = "Cankaya";
+    public static String hastaneTelefon = "3122343434";
+    public static String bashekim = "Dr Eda";
 
+    public String persIsmi = "isim atanmadi";
+    public String perAdres = "adres atanmadi";
+    public String perTel = "tel atanmadi";
 
 
 
