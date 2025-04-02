@@ -10,6 +10,11 @@ public class C05_PassByValue {
 
         System.out.println(sayi); // 4
 
+        // sayinin kalici olarak degismesini isteseydik
+
+        sayi = sayiyiDegistir(sayi);
+
+        System.out.println("Main method'da sayinin son degeri : " + sayi); // 8
 
     }
 
