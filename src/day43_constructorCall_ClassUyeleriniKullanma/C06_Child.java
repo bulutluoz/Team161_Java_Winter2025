@@ -55,10 +55,22 @@ public class C06_Child extends C05_P {
        // super();
         System.out.println("C int parametreli constructor calisti");
     }
+
+    C06_Child(double a){
+        // super(double a);
+        // parent class'da
+        // cagrilan constructor yoksa
+        // Java CTE verir
+    }
+
+
     public static void main(String[] args) {
 
         C06_Child child3 = new C06_Child("Ali");
-
+        //GP int parametreli constructor calisti
+        //GP String parametreli constructor calisti
+        //P int parametreli constructor calisti
+        //C String parametreli constructor calisti
 
 
 
