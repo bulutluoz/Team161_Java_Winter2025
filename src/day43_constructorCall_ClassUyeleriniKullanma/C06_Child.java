@@ -52,9 +52,31 @@ public class C06_Child extends C05_P {
     }
 
     C06_Child(int a){
-        // super();
+       // super();
         System.out.println("C int parametreli constructor calisti");
     }
+    public static void main(String[] args) {
+
+        C06_Child child3 = new C06_Child("Ali");
+
+
+
+
+
+        //C06_Child child2 = new C06_Child();
+        //GP parametresiz constructor calisti
+        //P parametresiz constructor calisti
+        //P String parametreli constructor calisti
+        //C parametresiz constructor calisti
+
+
+        //C06_Child child1 = new C06_Child(4);
+        //GP parametresiz constructor calisti
+        //P parametresiz constructor calisti
+        //C int parametreli constructor calisti
+    }
+
+
 
 
 
