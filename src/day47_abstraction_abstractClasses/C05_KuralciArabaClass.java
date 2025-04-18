@@ -17,12 +17,12 @@ public abstract class C05_KuralciArabaClass {
     // concrete method olarak olusturabiliriz
 
     public void klima(){
-
+        System.out.println("Araba klima");
     }
 
     public void sunroof(){
 
-
+        System.out.println("Araba sunroof");
     }
 
 
