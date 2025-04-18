@@ -12,9 +12,21 @@ public abstract class C03_KuralciParent {
 
     // method 1 child class'lar tarafindan
     // MUTLAKA override edilsin
-    public void method1(){
+    /*
+        Child class'larin mutlaka bulundurmasi gereken method'lar
+        bildigimiz klasik method'lardan farkli olmalidir
 
-    }
+        bu method'lar method olmaktan ziyade
+        child class'larin uyacaklari kurallari belirten
+        bir cumle gibi dusunulebilir
+
+        biz burada sunu demek istiyoruz :
+        Her child class'da MUTLAKA method1() olsun
+
+     */
+    public abstract void method1();
+    // Abstract methods cannot have a body
+
 
     // method2'yi child class'larin istegine birakiyoruz
     // isterlerse direkt parent class'dan kullansinlar
@@ -23,10 +35,17 @@ public abstract class C03_KuralciParent {
 
     }
 
+    /*
+        method'larda abstraction kullaninca
+        method'lari abstract method'lar
+        ve abstract olmayan method'lar diye ayirmak yerine
+
+        abstract olmayan yapilara bunu belirten bir isim verelim denmis
+        bu yapilari anlatirken "concrete" diyebiliriz
+     */
+
     // method 3 child class'lar tarafindan
     // MUTLAKA override edilsin
-    public void method3(){
-
-    }
+    public abstract void method3();
 
 }
