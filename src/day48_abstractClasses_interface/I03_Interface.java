@@ -6,7 +6,7 @@ public interface I03_Interface {
     // basinda bu keyword'ler kullanilmasa da tum variable'lar
     // bu ozellikleri tasir
 
-    public static final int SAYI1 = 10; // public static final
+    public static final int sayi1 = 10; // public static final
     public final int sayi2 = 30; // public static final
     static final int sayi3 = 230; // public static final
     public static int sayi4 = 40; // public static final
@@ -27,7 +27,7 @@ public interface I03_Interface {
 
     public abstract void method1();
     abstract void method2();
-    public void method3();
+    public String method3();
     // void method4(){};
     // Interface abstract methods cannot have body
     void method5();

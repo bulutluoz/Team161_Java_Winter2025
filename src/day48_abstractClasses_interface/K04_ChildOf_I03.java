@@ -7,7 +7,7 @@ public class K04_ChildOf_I03 implements I03_Interface {
 
     public static void main(String[] args) {
 
-        System.out.println(SAYI1); // 10
+        System.out.println(sayi1); // 10
 
         // sayi1 = 65;
         // Cannot assign a value to final variable 'sayi1'
@@ -45,8 +45,8 @@ public class K04_ChildOf_I03 implements I03_Interface {
     }
 
     @Override
-    public void method3() {
-
+    public String method3() {
+        return null;
     }
 
     @Override
