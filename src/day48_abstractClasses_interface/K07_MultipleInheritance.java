@@ -1,5 +1,8 @@
 package day48_abstractClasses_interface;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class K07_MultipleInheritance extends K06_ConcreteParent
                                      implements I05_Interface,I03_Interface{
 
@@ -63,6 +66,7 @@ public class K07_MultipleInheritance extends K06_ConcreteParent
          */
     @Override
     public void method1() {
+
 
     }
 
