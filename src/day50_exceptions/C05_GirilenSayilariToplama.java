@@ -38,11 +38,19 @@ public class C05_GirilenSayilariToplama {
 
                 girilenSayiDisiDeger = scanner.nextLine();
 
+                if (girilenSayiDisiDeger.equalsIgnoreCase("q")){
+                    break;
+                }else {
+                    System.out.println("Tamsayi deger girmelisiniz...");
+                }
+
 
             }
 
 
         }while( ! girilenSayiDisiDeger.equalsIgnoreCase("Q")  ); // loop'un devam etmesi icin gerekli sart
 
+
+        System.out.println("Girilen " + sayac + " adet tamsayinin toplami : " + toplam);
     }
 }
