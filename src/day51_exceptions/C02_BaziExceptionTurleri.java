@@ -57,6 +57,21 @@ public class C02_BaziExceptionTurleri {
                                     // (Parent - child class'lar arasinda atama yapilabilir)
 
 
+        //  8 - NumberFormatException : Uygun olmayan bir String'i parse etmeye calisirsaniz
+
+        String sayiS1 = "2a";
+        String sayiS2 = "67";
+
+        // String olarak verilen 2 sayiyi toplayin
+
+        // System.out.println( Integer.parseInt(sayiS1) + Integer.parseInt(sayiS2) ); // 90
+
+
+        // 9 - RunTimeException
+        //     RunTime'da ortaya cikan tum exception'larin parent'idir
+
+
+        // 10 - Exception : Tum exception class'larinin parent'idir
 
     }
 }
