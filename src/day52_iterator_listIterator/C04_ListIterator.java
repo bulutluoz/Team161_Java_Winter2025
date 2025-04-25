@@ -54,5 +54,36 @@ public class C04_ListIterator {
         // Ayni iterator'i kullanarak
         // sayilar listesindeki elemanlari Sondan basa dogru yazdirin
 
+        // iterator suan en basta
+        // sayilari sondan basa dogru yazdirmak icin once sona gitmeliyiz
+
+        while (lit.hasNext()){
+            lit.next();
+        }
+
+        // simdi iterator sonda
+        // artik sondan basa dogru gelebiliriz
+
+        while (lit.hasPrevious()){
+            System.out.print(lit.previous() + " ");
+        } // 2 4 0 3 1 0 1 3
+        System.out.println();
+
+
+        // listenin son hali : [3, 1, 0, 1, 3, 0, 4, 2]
+        // listedeki elemanlari iterator kullanarak
+        // kalici olacak sekilde 2 artirin
+
+        // iterator su an basta
+
+        while (lit.hasNext()){
+
+            lit.set(  (Integer)lit.next() + 2   ); // set() 'in icine atanacak degeri yazmaliyiz
+                       // atanacak deger  lit.next() ile alacagimiz eski degerin 2 fazlasi olacak
+        }
+
+        System.out.println("sayilar listesinin son hali : " + sayilar);
+        // sayilar listesinin son hali : [5, 3, 2, 3, 5, 2, 6, 4]
+
     }
 }
