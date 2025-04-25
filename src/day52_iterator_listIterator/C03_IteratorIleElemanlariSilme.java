@@ -33,14 +33,28 @@ public class C03_IteratorIleElemanlariSilme {
 
         System.out.println("sayilar listesinin son hali : " + sayilar);
 
+        // yukardaki loop ile iterator'i en sona kadar goturduk
+
+        // 3,8,1,6,0,6,9,1,3,7,0,8,6,4,2
 
 
 
         // sayilar listesinin yeni halinde
         // 5'den buyuk olan sayilari silin
+        // iterator en sonda oldugu icin
+        // tekrar ayni iterator ile elemanlari bastan sona elden geciremeyiz
+        // yeniden baslamak icin iterator'a yeni deger atamaliyiz
 
+        iterator = sayilar.iterator();
 
+        while (iterator.hasNext()) { // iterator.hasNext() == true
 
+            if ((Integer) iterator.next() > 5) {
+                iterator.remove();
+            }
 
+        }
+
+        System.out.println("sayilar listesinin en son hali : " + sayilar);
     }
 }
