@@ -52,5 +52,6 @@ public class C01_LinkedList_List {
         System.out.println(isimler.hashCode()); // 692097413
 
 
+
     }
 }
