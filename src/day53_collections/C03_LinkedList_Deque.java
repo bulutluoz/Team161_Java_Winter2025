@@ -43,5 +43,14 @@ public class C03_LinkedList_Deque {
         System.out.println(sayilar); // [12, 45, 40, 30]
 
         System.out.println(sayilar.size());  // 4
+
+
+        System.out.println(  sayilar.peekFirst()  );  // 12
+        // method'un getirdigi delili yazdirir
+
+        System.out.println(  sayilar  );
+        // method calistiktan sonraki satirda deque'i yazdirirsaniz
+        // method calistiktamn sonra listenin son halini yazdirir
+
     }
 }
