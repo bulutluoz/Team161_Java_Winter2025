@@ -1,7 +1,9 @@
 package day54_maps;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class C01_MapOlusturma {
 
@@ -50,6 +52,59 @@ public class C01_MapOlusturma {
 
 
         // numarasi 105'den buyuk olan ogrenci numaralarini yazdirin
+
+        for (int each : ogrenciMap.keySet()){
+            if (each >105){
+                System.out.print(each +" ");
+            }
+        }
+
+        // 106 107
+        System.out.println("");
+
+
+        // map'deki ogrencilerin numaralari olmadan sadece value'lerini yazdirin
+
+        System.out.println(ogrenciMap.values());
+        // [Ali-Can-11-H-MF, Veli-Cem-10-K-TM, Ali-Cem-11-K-TM, Ayse-Can-10-H-MF, Sevgi-Cem-11-M-TM, Sevgi-Can-10-K-MF, Esra-Han-11-M-SOZ]
+
+
+        // ogrenci numaralarini bir Set olarak kaydedin
+        Set<Integer> ogrenciNoSeti = ogrenciMap.keySet();
+
+        // map'deki ogrencilerin numaralari olmadan sadece value'lerini kaydedin
+        Collection<String> ogrenciValueCollection = ogrenciMap.values();
+
+
+        // map'de 102 numarasina sahip bir ogrenci var mi ?
+        System.out.println(ogrenciMap.containsKey(102)); // true
+
+
+        // map'de 110 numarasina sahip bir ogrenci var mi ?
+        System.out.println(ogrenciMap.containsKey(110)); // false
+
+
+        // ismi Ali olan bir ogrenci var mi ?
+        System.out.println(ogrenciMap.containsValue("Ali")); // false
+        // her bir elemanin 1 key, 1 value'su bulunur
+        // ve value'su sadece "Ali" olan bir eleman yok
+
+
+        // bilgileri "Ali-Can-11-H-MF" olan bir ogrenci var mi ?
+        System.out.println(ogrenciMap.containsValue("Ali-Can-11-H-MF")); // true
+
+
+        // bilgileri "Veli-Cem-10-K-TM" olan bir ogrenci var mi ?
+        System.out.println(ogrenciMap.containsValue("Veli-Cem-10-K-TM")); // true
+
+
+        // bilgileri "Veli-Cem-11-K-TM" olan bir ogrenci var mi ?
+        System.out.println(ogrenciMap.containsValue("Veli-Cem-11-K-TM")); // false
+
+        // Value icin bilgileri birlestirip tek bir String yaptik
+        // value ile bir ogrencinin sadece ismi veya sadece soyismi ayni sey degildir
+        // value tum bilgileri iceren tek bir yapidir
+
 
 
     }
