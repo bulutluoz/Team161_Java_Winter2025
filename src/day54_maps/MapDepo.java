@@ -74,7 +74,6 @@ public class MapDepo {
     // baslangic ve bitis no verildiginde
     // bu numaralar ve arasindaki numaralarin no, isim, soyisim , sinif ve sube'lerini yazdiran
     // bir method olusturun
-
     protected static void numaraAraligindakiOgrenciBilgileriniYazdir(int baslangicNo, int bitisNo){
 
         // 1.adim tum key'leri kaydedin
@@ -107,6 +106,53 @@ public class MapDepo {
 
     }
 
+    // Tum ogrencilerin isimlerini ilk harfi buyuk, kalan harfler kucuk harf,
+    // soyisimlerinin tamami buyuk harf olacak sekilde update eden bir method olusturun
+
+    protected static void tumIsimVeSoyisimleriDuzenle(){
+
+        // 1.adim tum key'leri kaydedin
+        Set<Integer> tumOgrenciNoSeti = ogrenciMap.keySet();
+
+        // 2.adim : her bir key'i tek tek ele alip,
+        System.out.println("Verilen araliktaki ogrenci bilgileri : ");
+
+        for ( Integer  eachKey :tumOgrenciNoSeti) { // 106
+
+            // 3.adim : eachKey bize her bir key'i getirecek
+            //          biz de o key'e ait value'yu kaydedelim
+            String eachValue = ogrenciMap.get(eachKey); // Sevgi-Can-10-K-MF
+
+
+            // 4.adim : bilgilere ulasabilmek icin value'yu split edelim
+            String[] eachValueArr = eachValue.split("-"); //  [Sevgi, Can, 10, K, MF]
+
+            // 5.adim : istenen update'i yapin
+            String eskiIsim = eachValueArr[0];
+            String eskiSoyisim = eachValueArr[1];
+
+            String yeniIsim = eskiIsim.substring(0, 1).toUpperCase() +
+                    eskiIsim.substring(1).toLowerCase();
+            String yeniSoyisim = eskiSoyisim.toUpperCase();
+
+            // array'i yeni isimlerle update edelim
+            eachValueArr[0] = yeniIsim;
+            eachValueArr[1] = yeniSoyisim;
+            //  [Sevgi, CAN, 10, K, MF]
+
+            // update'i array'de yaptik
+            // yapilan update'i map'e islemeliyiz
+            // 6.adim array'i value olacak sekilde birlestirip
+            //        yeni value olarak kaydedelim
+
+            String yeniValue = String.join("-",eachValueArr);  // Sevgi-CAN-10-K-MF
+
+            // 7.adim : yeni value ile map'i update edelim
+
+            ogrenciMap.put(eachKey,yeniValue);
+
+        }
+    }
 
 
 }
