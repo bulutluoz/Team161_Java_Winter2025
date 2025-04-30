@@ -115,8 +115,6 @@ public class MapDepo {
         Set<Integer> tumOgrenciNoSeti = ogrenciMap.keySet();
 
         // 2.adim : her bir key'i tek tek ele alip,
-        System.out.println("Verilen araliktaki ogrenci bilgileri : ");
-
         for ( Integer  eachKey :tumOgrenciNoSeti) { // 106
 
             // 3.adim : eachKey bize her bir key'i getirecek
@@ -152,6 +150,61 @@ public class MapDepo {
             ogrenciMap.put(eachKey,yeniValue);
 
         }
+    }
+
+
+    // verilen sinif ve sube'de egitim goren tum ogrencilerin
+    // sinif ve subelerini yeni verilen degerler ile update edin
+    // Orn : 10/K subesindeki ogrencileri 10/P olarak guncelleyin
+
+    protected static void sinifVeSubeUpdate(int eskiSinif, String eskiSube, int yeniSinif, String yeniSube){
+
+        // 1.adim tum key'leri kaydedin
+        Set<Integer> tumOgrenciNoSeti = ogrenciMap.keySet();
+
+        // 2.adim : her bir key'i tek tek ele alip,
+
+        for ( Integer  eachKey :tumOgrenciNoSeti) { // 106
+
+            // 3.adim : eachKey bize her bir key'i getirecek
+            //          biz de o key'e ait value'yu kaydedelim
+            String eachValue = ogrenciMap.get(eachKey); // Sevgi-Can-10-K-MF
+
+
+            // 4.adim : bilgilere ulasabilmek icin value'yu split edelim
+            String[] eachValueArr = eachValue.split("-"); //  [Sevgi, Can, 10, K, MF]
+
+            // 5.adim : istenen update'i yapin
+            // verilen sinif ve sube'de egitim goren tum ogrencilerin
+            // sinif ve subelerini yeni verilen degerler ile update edin
+            // eski sinif ve subeyi kontrol etmeli, degismesi gereken sinif ve sube ise degistirmeliyiz
+
+            String ogrencininSinifi = eachValueArr[2];
+            String ogrencininSubesi = eachValueArr[3];
+
+            if (ogrencininSinifi.equalsIgnoreCase(eskiSinif+"") && ogrencininSubesi.equalsIgnoreCase(eskiSube)){
+                // eger ogrencinin sinif ve subesi degismesi gerekiyorsa
+                // array'i update edelim
+                eachValueArr[2] = yeniSinif+"" ;
+                eachValueArr[3] = yeniSube ;
+
+            }
+
+            // update'i array'de yaptik
+            // yapilan update'i map'e islemeliyiz
+            // 6.adim array'i value olacak sekilde birlestirip
+            //        yeni value olarak kaydedelim
+
+            String yeniValue = String.join("-",eachValueArr);  // Sevgi-CAN-10-K-MF
+
+            // 7.adim : yeni value ile map'i update edelim
+
+            ogrenciMap.put(eachKey,yeniValue);
+
+        }
+
+
+
     }
 
 
