@@ -1,6 +1,7 @@
 package day56_nestedMaps;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class C02_FarkliDataTurleriniBirlikteKullanma {
@@ -21,7 +22,7 @@ public class C02_FarkliDataTurleriniBirlikteKullanma {
         seyler.add(true);
         seyler.add('a');
 
-        int[] arr = {3,6,8};
+        Integer[] arr = {3,6,8};
         seyler.add(arr);
 
         /*
@@ -42,11 +43,14 @@ public class C02_FarkliDataTurleriniBirlikteKullanma {
 
         // listenin ilk elemani olan Ali'nin karakter sayisini yazdirin
 
-        System.out.println(seyler.get(0).length());
+        System.out.println(((String)seyler.get(0)).length()); // 3
 
         // listenin ikinci elemani olan 20'nin 2 katini yazdirin
 
-        System.out.println(seyler.get(1) * 2);
+        System.out.println((Integer)seyler.get(1) * 2); // 40
+
+        // 4.index'deki array'i yazdirin
+        System.out.println(Arrays.toString((Integer[]) seyler.get(4))); // [3, 6, 8]
 
     }
 }
